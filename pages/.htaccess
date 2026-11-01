@@ -1,0 +1,75 @@
+# ==============================================================================
+# KING CONSTRUCTION HOLDINGS S.A. — PERFORMANCE & LOW-BANDWIDTH CACHING CONFIG
+# Apache / Litespeed Web Server Configuration for Low-Bandwidth Networks
+# ==============================================================================
+
+# 1. ENABLE BROTLI & GZIP COMPRESSION
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# 2. MODERN IMAGE MIME TYPES
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/avif .avif
+  AddType image/svg+xml .svg
+</IfModule>
+
+# 3. LEVERAGE BROWSER CACHING (Saves expensive mobile data for repeat visits)
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images: 1 Year (Static assets do not change)
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # CSS and JavaScript: 1 Month
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+
+  # Web Fonts: 1 Year
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+
+  # HTML documents: 1 Hour (Ensure fast updates)
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# 4. CACHE-CONTROL HEADERS
+<IfModule mod_headers.c>
+  # 1 Year Immutable cache for images and fonts
+  <FilesMatch "\.(webp|avif|jpg|jpeg|png|svg|ico|woff2)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+
+  # 1 Month cache for CSS and JS
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+
+  # HTML documents: Revalidate
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=3600, must-revalidate"
+  </FilesMatch>
+
+  # Security & Performance Headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+

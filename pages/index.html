@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King Construction Holdings S.A. | Building Your Dreams Into Reality</title>
+  <meta name="description" content="Website concept for King Construction Holdings S.A. Company profile, services, and contact details are unconfirmed pending review.">
+  <meta name="keywords" content="King Construction Holdings S.A., Construction Cameroon, Buea Construction, Real Estate Buea, Civil Engineering Cameroon, Infrastructure Buea">
+  <meta name="author" content="King Construction Holdings S.A.">
+  <meta name="theme-color" content="#0A1F8F">
+
+  <!-- Open Graph / Social Sharing Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="King Construction Holdings S.A. | Building Your Dreams Into Reality">
+  <meta property="og:description" content="Commercial construction, infrastructure, real estate, and diversified business solutions based in Buea, Cameroon.">
+  <meta property="og:image" content="../images/ceo.jpg">
+
+  <!-- Performance Optimization: Resource Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero-optimized.jpg" fetchpriority="high">
+
+  <!-- Optimized Google Fonts: font-display=swap and lean font weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon SVG Placeholder (Zero-transfer data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='8' fill='%230A2540'/><path d='M14 10h6v12l10-12h8L26 23l13 15h-8L20 25v13h-6V10z' fill='%23FF6600'/></svg>">
+
+  <!-- External Stylesheet (Custom CSS Architecture) -->
+  <link rel="stylesheet" href="tailwind.css">
+
+  <!-- Deferred JavaScript (Non-blocking parser execution) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Primary Sticky Navigation Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      <!-- Corporate Logo -->
+      <a href="#home" class="brand-logo" onclick="switchPage('home'); return false;" aria-label="King Construction Holdings S.A. Homepage">
+        <img src="images/logo-optimized.jpg" alt="King Construction Holdings S.A. Logo" class="brand-logo-img" width="52" height="44">
+        <div class="brand-text">
+          <span class="brand-name">KING CONSTRUCTION</span>
+          <span class="brand-sub">HOLDINGS S.A. &bull; BUEA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-page="home" onclick="switchPage('home'); return false;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-page="about" onclick="switchPage('about'); return false;">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link" data-page="services" onclick="switchPage('services'); return false;">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-page="contact" onclick="switchPage('contact'); return false;">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary header-cta" onclick="handleQuoteClick(); return false;">
+          <span>Get a Quote</span>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link active" data-page="home" onclick="switchPage('home'); return false;">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link" data-page="about" onclick="switchPage('about'); return false;">About Us</a></li>
+          <li><a href="#services" class="mobile-nav-link" data-page="services" onclick="switchPage('services'); return false;">Services</a></li>
+          <li><a href="#contact" class="mobile-nav-link" data-page="contact" onclick="switchPage('contact'); return false;">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-actions">
+          <a href="#contact" class="btn btn-primary btn-block" onclick="handleQuoteClick(); return false;">Get a Quote</a>
+          <a href="tel:+237682105925" class="btn btn-outline btn-block mt-3">
+            <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call +237 682 105 925</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER (Switchable Sections) -->
+  <main id="mainContent">
+
+    <!-- ======================================================== -->
+    <!-- SECTION 1: HOME PAGE                                     -->
+    <!-- ======================================================== -->
+    <section id="page-home" class="page-section active" aria-labelledby="hero-title">
+      <!-- Hero Section (Exact Requested Layout: Height 520px desktop, 400px mobile, 2-layer background + left overlay + content) -->
+      <section class="hero-section" id="heroSection" aria-labelledby="hero-title">
+        <!-- Background Image Layer: Compressed rooftop slab image showing 4 workers, tower cranes & building on right -->
+        <div class="hero-bg-layer" style="background-image: url('images/hero-optimized.jpg');"></div>
+        
+        <!-- Left Overlay: linear-gradient 90deg, 65% width desktop, 100% with 85% opacity mobile -->
+        <div class="hero-overlay-layer"></div>
+
+        <!-- Content (on top of overlay, left side, z-index 2) -->
+        <div class="hero-content-wrapper">
+          <div class="hero-content-box">
+            <h1 id="hero-title" class="hero-h1">Building Your Dreams<br>Into Reality</h1>
+            <p class="hero-subtext">
+              Trusted construction partner in Buea, Cameroon delivering quality infrastructure, real estate, and project management solutions with excellence and reliability.
+            </p>
+            
+            <div class="hero-cta-wrap">
+              <a href="#contact" class="hero-btn-quote" onclick="handleQuoteClick(); return false;">
+                <span>Get a Quote</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Company Overview Section: Building Excellence -->
+      <section class="section section-intro">
+        <div class="container">
+          <div class="intro-grid">
+            <div class="intro-text-col">
+              <div class="section-tag">Corporate Profile</div>
+              <h2 class="section-title">Building Excellence. Creating Lasting Value.</h2>
+              <p class="lead-text">
+                King Construction Holdings S.A. is an integrated construction, infrastructure, real estate, and diversified enterprise headquartered in Molyko, Buea, South West Region of Cameroon.
+              </p>
+              <p class="body-text">
+                Our business operates at the nexus of structural engineering rigor and forward-thinking real estate development. We coordinate multi-disciplinary capabilities spanning residential building, public infrastructure, specialized civil works, property advisory, and industrial trade lines.
+              </p>
+              <div class="intro-highlights">
+                <div class="highlight-item">
+                  <div class="highlight-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                      <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="highlight-title">End-to-End Delivery</h4>
+                    <p class="highlight-desc">From initial site surveying, soil testing, and pre-construction planning to turnkey handover.</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="highlight-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                      <polyline points="2 17 12 22 22 17"/>
+                      <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="highlight-title">Diversified Industrial Holdings</h4>
+                    <p class="highlight-desc">Synergies across building material distribution, logistics, agro-processing, and project consulting.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="intro-actions">
+                <a href="#about" class="btn btn-secondary" onclick="switchPage('about'); return false;">
+                  <span>Read Corporate Background</span>
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="intro-visual-col">
+              <div class="visual-card-stack">
+                <img
+                    src="../images/FB_IMG.jpg"
+                    alt="Construction materials supplied by King Construction"
+                    class="visual-img-main"
+                    width="800"
+                    height="480"
+                    loading="eager"
+                    decoding="async"
+                >
+                <div class="visual-accent-badge">
+                  <span class="badge-accent-number">Buea</span>
+                  <span class="badge-accent-label">South West Cameroon Hub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Showcase Section (Low-Bandwidth Optimized) -->
+      <section class="section section-projects bg-surface">
+        <div class="container">
+          <div class="section-header text-center">
+            <div class="section-tag">Project Photos</div>
+            <h2 class="section-title">Work In Progress</h2>
+            <p class="section-subtitle">
+              Photos shared from King Construction's Facebook page. Project details are unconfirmed and should be verified before publication.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project Card 1: Luxury Residences (AVIF/WebP, 50-80KB target) -->
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img 
+                    src="../images/project2.jpg" 
+                    alt="Residential building with construction scaffolding" 
+                    class="project-img"
+                    width="600"
+                    height="360"
+                    loading="eager"
+                    decoding="async"
+                >
+                <div class="project-category-badge">Project photo</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-label">Photo shared from Facebook</div>
+                <h3 class="project-title">Residential Construction</h3>
+                <p class="project-desc">
+                  Project name, location, date, scope, completion status, and King Construction's role: unconfirmed.
+                </p>
+                <ul class="project-features">
+                  <li>Project name: unconfirmed</li>
+                  <li>Location and date: unconfirmed</li>
+                  <li>Scope and company role: unconfirmed</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project Card 2: Modern Apartment Complexes -->
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img 
+                    src="../images/project1.jpg" 
+                    alt="Construction worker on timber formwork at a building site" 
+                    class="project-img"
+                    width="600"
+                    height="360"
+                    loading="eager"
+                    decoding="async"
+                >
+                <div class="project-category-badge">Project photo</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-label">Photo shared from Facebook</div>
+                <h3 class="project-title">Construction Site</h3>
+                <p class="project-desc">
+                  Project name, location, date, scope, completion status, and King Construction's role: unconfirmed.
+                </p>
+                <ul class="project-features">
+                  <li>Project name: unconfirmed</li>
+                  <li>Location and date: unconfirmed</li>
+                  <li>Scope and company role: unconfirmed</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Project Card 3: Commercial Buildings -->
+            <article class="project-card">
+              <div class="project-img-wrap">
+                <img
+                    src="../images/in_const.jpg"
+                    alt="Commercial building under construction"
+                    class="project-img"
+                    width="600"
+                    height="360"
+                    loading="eager"
+                    decoding="async"
+                >
+                <div class="project-category-badge">Commercial Infrastructure</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta-label">Illustrative image only</div>
+                <h3 class="project-title">Additional project details unconfirmed</h3>
+                <p class="project-desc">
+                  Project details and King Construction's involvement are unconfirmed.
+                </p>
+                <ul class="project-features">
+                  <li>Project image: unconfirmed</li>
+                  <li>Project details: unconfirmed</li>
+                  <li>Company involvement: unconfirmed</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project Showcase CTA -->
+          <div class="projects-cta-box text-center">
+            <h3>Planning a New Development or Commercial Project?</h3>
+            <p>Our engineering and real estate advisory teams are available to assess your site plans, land acquisition needs, and construction timelines.</p>
+            <a href="#contact" class="btn btn-primary btn-lg" onclick="handleQuoteClick(); return false;">
+              <span>Discuss Your Project</span>
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="section section-why">
+        <div class="container">
+          <div class="section-header text-center">
+            <div class="section-tag">Value Proposition</div>
+            <h2 class="section-title">Why Partner With King Construction Holdings S.A.</h2>
+            <p class="section-subtitle">
+              A disciplined, dependable approach focused on structural durability, transparent management, and measurable return on investment.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="why-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Commitment to Quality</h3>
+              <p class="why-card-text">
+                Every project adheres to rigorous material specifications, standard concrete curing protocols, and meticulous finishing inspections to ensure decades of structural integrity.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Professional Project Management</h3>
+              <p class="why-card-text">
+                Structured scheduling, realistic cost estimation, on-site supervision, and clear milestone reporting that respect client timelines and allocated budgets.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Diverse Business Solutions</h3>
+              <p class="why-card-text">
+                Our multi-sector ecosystem integrates construction, real estate advisory, building material supplies, and logistics, reducing third-party markups and logistical delays.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Customer-Focused Approach</h3>
+              <p class="why-card-text">
+                We maintain active communication channels throughout every project phase, offering transparent consultation, flexible design adaptations, and dependable post-delivery support.
+              </p>
+            </div>
+
+            <div class="why-card why-card-featured">
+              <div class="why-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                  <polyline points="17 6 23 6 23 12"/>
+                </svg>
+              </div>
+              <h3 class="why-card-title">Long-Term Value</h3>
+              <p class="why-card-text">
+                We engineer assets that appreciate over time. Whether developing commercial buildings, residential properties, or civil infrastructure, we protect capital and drive sustained economic yield.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Quick Action Strip -->
+      <section class="section cta-strip-section">
+        <div class="container cta-strip-inner">
+          <div class="cta-strip-text">
+            <h2>Ready to bring your construction or real estate vision to life?</h2>
+            <p>Connect with our engineering and project advisory team in Molyko, Buea.</p>
+          </div>
+          <div class="cta-strip-actions">
+            <a href="#contact" class="btn btn-primary btn-lg" onclick="switchPage('contact'); return false;">Request Consultation</a>
+            <a href="https://wa.me/237682105925?text=Hello%20King%20Construction%20Holdings%20S.A.,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 6.78C8.86 6.78 8.67 6.85 8.53 7C8.38 7.15 7.8 7.7 7.8 8.84C7.8 9.97 8.63 11.06 8.74 11.22C8.86 11.37 10.35 13.67 12.63 14.65C14.52 15.46 14.91 15.3 15.32 15.26C15.93 15.2 16.71 14.77 16.87 14.32C17.03 13.86 17.03 13.47 16.98 13.39C16.93 13.31 16.79 13.26 16.51 13.12C16.23 12.98 14.86 12.3 14.6 12.21C14.35 12.12 14.16 12.07 13.98 12.35C13.79 12.63 13.25 13.31 13.09 13.5C12.93 13.69 12.77 13.71 12.49 13.57C12.21 13.43 11.31 13.13 10.25 12.18C9.42 11.44 8.86 10.53 8.7 10.25C8.54 9.97 8.68 9.82 8.82 9.68C8.95 9.55 9.11 9.34 9.25 9.18C9.39 9.02 9.44 8.9 9.53 8.72C9.62 8.53 9.58 8.37 9.51 8.23C9.44 8.09 8.88 6.72 8.65 6.17C8.42 5.63 8.2 5.71 8.03 5.7C7.88 5.69 7.7 5.69 7.52 5.69"/>
+              </svg>
+              <span>WhatsApp Direct</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 2: ABOUT US                                      -->
+    <!-- ======================================================== -->
+    <section id="page-about" class="page-section" aria-labelledby="about-title">
+      <!-- Section Header Banner -->
+      <div class="page-header-banner about-page-banner">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="badge badge-accent">Corporate Identity & Strategy</span>
+            <h1 id="about-title" class="page-header-title">About King Construction Holdings S.A.</h1>
+            <p class="page-header-subtitle">
+              A forward-thinking construction, infrastructure, real estate, and diversified holding group rooted in Buea, Cameroon.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="about-overview-grid">
+            <div class="about-content-col">
+              <div class="section-tag">Organization Profile</div>
+              <h2 class="section-title">Built On Discipline. Engineered for Longevity.</h2>
+              <p class="lead-text">
+                King Construction Holdings S.A. was established to address the critical need for dependable, high-standard construction, sustainable infrastructure, and transparent real estate solutions across Cameroon.
+              </p>
+              <p class="body-text">
+                Headquartered strategically in Molyko, Buea, the administrative and commercial epicenter of the South West Region, the company leverages regional technical insight, skilled engineering talent, and a client-focused corporate structure.
+              </p>
+              <p class="body-text">
+                Rather than treating projects merely as contractual transactions, King Construction Holdings S.A. operates as a strategic infrastructure partner. We align architectural creativity with structural physics, regulatory compliance, and responsible budget stewardship.
+              </p>
+
+              <!-- Strategic Focus Areas -->
+              <div class="focus-areas-block">
+                <h3 class="focus-block-title">Our Strategic Focus Areas</h3>
+                <div class="focus-grid">
+                  <div class="focus-card">
+                    <div class="focus-bullet"></div>
+                    <div>
+                      <strong>Professional Service Delivery:</strong>
+                      <span>Transparent client communication, verified milestones, and ethical engineering practices.</span>
+                    </div>
+                  </div>
+                  <div class="focus-card">
+                    <div class="focus-bullet"></div>
+                    <div>
+                      <strong>Quality Workmanship:</strong>
+                      <span>Adherence to structural building standards, validated raw material testing, and precision finishing.</span>
+                    </div>
+                  </div>
+                  <div class="focus-card">
+                    <div class="focus-bullet"></div>
+                    <div>
+                      <strong>Customer Satisfaction:</strong>
+                      <span>Deep alignment with client functional needs, budget parameters, and long-term operating expectations.</span>
+                    </div>
+                  </div>
+                  <div class="focus-card">
+                    <div class="focus-bullet"></div>
+                    <div>
+                      <strong>Responsible Project Management:</strong>
+                      <span>Systematic workflow scheduling, site health and safety oversight, and risk mitigation.</span>
+                    </div>
+                  </div>
+                  <div class="focus-card">
+                    <div class="focus-bullet"></div>
+                    <div>
+                      <strong>Long-Term Value Creation:</strong>
+                      <span>Developing durable physical assets that generate appreciation and economic utility for owners and communities.</span>
+                    </div>
+                  </div>
+                  <div class="focus-card">
+                    <div class="focus-bullet"></div>
+                    <div>
+                      <strong>Reliable Business Relationships:</strong>
+                      <span>Building long-lasting trust with private property owners, institutional investors, and municipal partners.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Visual Column (Low-Bandwidth Optimized WebP/AVIF) -->
+            <div class="about-media-col">
+              <div class="about-image-frame">
+                <img 
+                    src="../images/about.jpg" 
+                    alt="King Construction Holdings S.A. building" 
+                    class="about-img-main"
+                    width="800"
+                    height="440"
+                    loading="eager"
+                    decoding="async"
+                >
+                <div class="about-stat-overlay">
+                  <div class="about-stat-item">
+                    <span class="about-stat-title">Headquarters</span>
+                    <span class="about-stat-value">Molyko, Buea</span>
+                    <span class="about-stat-region">South West Region, Cameroon</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location & Corporate Verification Note -->
+              <div class="about-location-note">
+                <div class="location-note-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                    <circle cx="12" cy="9" r="2.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="location-note-title">Strategic Regional Footprint</h4>
+                  <p class="location-note-text">
+                    Located in Molyko, Buea, positioning the company to efficiently deploy site crews, heavy equipment, and building materials across the South West Region, the Littoral, and national developmental corridors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Commitment Block -->
+          <div class="commitment-section">
+            <div class="commitment-card">
+              <div class="commitment-badge">Core Foundation</div>
+              <h2 class="commitment-title">Our Corporate Commitment</h2>
+              <p class="commitment-intro">
+                At King Construction Holdings S.A., we recognize that every structure built shapes the physical landscape and economic future of our communities.
+              </p>
+              <div class="commitment-pillars-grid">
+                <div class="pillar-box">
+                  <div class="pillar-num">01</div>
+                  <h4 class="pillar-title">Structural Safety & Compliance</h4>
+                  <p class="pillar-text">
+                    We commit to zero compromise on structural integrity. Soil testing, load calculations, and quality cement formulations form the non-negotiable baseline of our construction methodology.
+                  </p>
+                </div>
+                <div class="pillar-box">
+                  <div class="pillar-num">02</div>
+                  <h4 class="pillar-title">Transparent Stewardship</h4>
+                  <p class="pillar-text">
+                    Clients and partners receive clear documentation, accurate bills of quantities (BOQ), and honest timeline forecasts, removing uncertainty from complex developments.
+                  </p>
+                </div>
+                <div class="pillar-box">
+                  <div class="pillar-num">03</div>
+                  <h4 class="pillar-title">Local Empowerment & Impact</h4>
+                  <p class="pillar-text">
+                    We take pride in training and deploying Cameroonian engineering talent, utilizing domestic trade networks, and constructing durable assets that foster regional prosperity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Next Step -->
+          <div class="about-cta-footer text-center">
+            <h3>Explore How Our Divisions Can Serve Your Goals</h3>
+            <p>From civil engineering and residential property to building materials and trade logistics.</p>
+            <div class="about-cta-btns">
+              <a href="#services" class="btn btn-primary" onclick="switchPage('services'); return false;">View All Service Divisions</a>
+              <a href="#contact" class="btn btn-secondary" onclick="switchPage('contact'); return false;">Contact Our Office</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 3: SERVICES                                      -->
+    <!-- ======================================================== -->
+    <section id="page-services" class="page-section" aria-labelledby="services-title">
+      <!-- Section Header Banner -->
+      <div class="page-header-banner services-page-banner">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="badge badge-accent">Comprehensive Business Capabilities</span>
+            <h1 id="services-title" class="page-header-title">Our Services & Business Divisions</h1>
+            <p class="page-header-subtitle">
+              Draft service categories for review. Every division and capability listed here is unconfirmed by the company.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <!-- Interactive Division Filter Bar -->
+          <div class="services-filter-bar" role="tablist" aria-label="Service Divisions">
+            <button class="filter-btn active" data-filter="all" onclick="filterServices('all', this);">All Capabilities</button>
+            <button class="filter-btn" data-filter="construction" onclick="filterServices('construction', this);">1. Construction & Infrastructure</button>
+            <button class="filter-btn" data-filter="realestate" onclick="filterServices('realestate', this);">2. Real Estate & Hospitality</button>
+            <button class="filter-btn" data-filter="diversified" onclick="filterServices('diversified', this);">3 - 5. Materials, Agri & Logistics</button>
+            <button class="filter-btn" data-filter="consulting" onclick="filterServices('consulting', this);">6. Project Consulting</button>
+          </div>
+
+          <!-- DIVISION 1: CONSTRUCTION & INFRASTRUCTURE -->
+          <div class="service-division-block" data-category="construction">
+            <div class="division-header">
+              <div class="division-number">Division 01</div>
+              <h2 class="division-title">Construction & Infrastructure</h2>
+              <p class="division-desc">
+                Engineering-led building services covering civil works, structural development, residential complexes, and specialized utility installations.
+              </p>
+            </div>
+
+            <div class="services-subgrid">
+              <!-- Item 1 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Residential Construction</h3>
+                <p class="service-summary">
+                  Full-cycle construction of private family villas, contemporary homes, and high-standard residential housing with durable structural frameworks.
+                </p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                    <line x1="6" y1="6" x2="6.01" y2="6"/>
+                    <line x1="6" y1="18" x2="6.01" y2="18"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Civil Engineering</h3>
+                <p class="service-summary">
+                  Structural calculations, reinforced concrete retaining walls, drainage systems, culverts, and heavy ground stabilization works.
+                </p>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19L8 5H16L20 19"/>
+                    <line x1="12" y1="7" x2="12" y2="9"/>
+                    <line x1="12" y1="13" x2="12" y2="15"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Road Construction</h3>
+                <p class="service-summary">
+                  Sub-base preparation, grading, paving, curb installation, and perimeter access roads for residential developments and commercial precincts.
+                </p>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Construction Management</h3>
+                <p class="service-summary">
+                  Direct site supervision, trade coordination, health and safety monitoring, quality assurance checklists, and strict timeline adherence.
+                </p>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 14 14"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Pre-construction Planning</h3>
+                <p class="service-summary">
+                  Detailed cost estimating, feasibility reviews, procurement strategies, permit coordination, and risk assessments prior to breaking ground.
+                </p>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Renovation and Remodeling</h3>
+                <p class="service-summary">
+                  Structural retrofitting, facility modernization, adaptive reuse of existing properties, and complete commercial space upgrades.
+                </p>
+              </div>
+
+              <!-- Item 7 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 22h20"/>
+                    <path d="M12 2L2 22h20L12 2z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Architectural & Building Services</h3>
+                <p class="service-summary">
+                  Concept generation, spatial layout optimization, working drawings, elevation designs, and technical drafting compliant with local regulations.
+                </p>
+              </div>
+
+              <!-- Item 8 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21 15 16 10 5 21"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Interior Design & Finishing</h3>
+                <p class="service-summary">
+                  Custom ceiling treatments (POP/gypsum), tiling, architectural lighting, woodwork, precision painting, and modern aesthetic styling.
+                </p>
+              </div>
+
+              <!-- Item 9 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Plumbing, Electrical & HVAC</h3>
+                <p class="service-summary">
+                  Industrial-grade electrical distribution, safety breakers, pressurized plumbing networks, clean water lines, and ventilation systems.
+                </p>
+              </div>
+
+              <!-- Item 10 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Borehole Services</h3>
+                <p class="service-summary">
+                  Hydrogeological survey, rotary drilling, casing installation, submersible pump fitting, water storage tower integration, and filtration.
+                </p>
+              </div>
+
+              <!-- Item 11 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Land Surveying & Landscaping</h3>
+                <p class="service-summary">
+                  Topographical surveying, cadastral boundary demarcation, contour mapping, grading, retaining greenery, and paved hardscaping.
+                </p>
+              </div>
+
+              <!-- Item 12 -->
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Soil Testing</h3>
+                <p class="service-summary">
+                  Geotechnical sampling, load-bearing capacity assessment, moisture analysis, and foundation recommendations to prevent structural settlement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIVISION 2: REAL ESTATE & HOSPITALITY -->
+          <div class="service-division-block" data-category="realestate">
+            <div class="division-header">
+              <div class="division-number">Division 02</div>
+              <h2 class="division-title">Real Estate & Hospitality</h2>
+              <p class="division-desc">
+                Strategic property development, verified land acquisition, and premium accommodation solutions across prime locations in Cameroon.
+              </p>
+            </div>
+
+            <div class="services-subgrid">
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                    <line x1="9" y1="6" x2="9.01" y2="6"/>
+                    <line x1="15" y1="6" x2="15.01" y2="6"/>
+                    <line x1="9" y1="10" x2="9.01" y2="10"/>
+                    <line x1="15" y1="10" x2="15.01" y2="10"/>
+                    <line x1="9" y1="14" x2="9.01" y2="14"/>
+                    <line x1="15" y1="14" x2="15.01" y2="14"/>
+                    <line x1="9" y1="18" x2="15" y2="18"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Real Estate Development</h3>
+                <p class="service-summary">
+                  Master planning and development of residential clusters, commercial parcels, and multi-tenant assets designed for long-term capital appreciation.
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Land Sales & Acquisition</h3>
+                <p class="service-summary">
+                  Facilitating verified land transactions with rigorous title verification, boundary confirmation, and regulatory alignment in Buea and regional corridors.
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18"/>
+                    <path d="M5 21V7l8-4v18"/>
+                    <path d="M19 21V11l-6-4"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Property Development</h3>
+                <p class="service-summary">
+                  End-to-end property development cycles including market demand analysis, architectural concepts, financing coordination, and execution.
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Property Advisory</h3>
+                <p class="service-summary">
+                  Valuation guidance, rental yield projections, regulatory compliance consulting, and strategic portfolio planning for private and institutional investors.
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Hospitality Solutions</h3>
+                <p class="service-summary">
+                  Development and project execution of boutique hospitality spaces, serviced apartments, and guest lodging infrastructure suited for corporate and leisure clients.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIVERSIFIED HOLDINGS (Divisions 03, 04, 05) -->
+          <div class="service-division-block" data-category="diversified">
+            <div class="division-header">
+              <div class="division-number">Divisions 03 — 05</div>
+              <h2 class="division-title">Industrial Holdings, Agriculture & Trade</h2>
+              <p class="division-desc">
+                Strategic diversification providing supply chain security, high-grade materials, and agricultural value addition.
+              </p>
+            </div>
+
+            <div class="services-subgrid">
+              <!-- Division 03 -->
+              <div class="service-card service-card-highlight">
+                <div class="service-badge-pill">Division 03</div>
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13"/>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Building Materials Division</h3>
+                <p class="service-summary">
+                  Supply and reliable distribution of high-grade construction materials including certified cement, high-tensile steel rebar, aggregates, gravel, sand, concrete blocks, and quality plumbing hardware.
+                </p>
+                <div class="service-meta-tag">Direct Bulk Supply & Logistics</div>
+              </div>
+
+              <!-- Division 04 -->
+              <div class="service-card service-card-highlight">
+                <div class="service-badge-pill">Division 04</div>
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a10 10 0 0 0-7.07 17.07C7.45 21.6 12 22 12 22s4.55-.4 7.07-2.93A10 10 0 0 0 12 2z"/>
+                    <path d="M12 6v10"/>
+                    <path d="M8 10l4-4 4 4"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Agriculture & Agro-Processing</h3>
+                <p class="service-summary">
+                  Commercial agricultural cultivation, modern crop farming, post-harvest handling, and value-added agro-processing operations contributing to sustainable food supply chains and domestic trade.
+                </p>
+                <div class="service-meta-tag">Agricultural Holdings</div>
+              </div>
+
+              <!-- Division 05 -->
+              <div class="service-card service-card-highlight">
+                <div class="service-badge-pill">Division 05</div>
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Logistics & Trade</h3>
+                <p class="service-summary">
+                  Comprehensive supply chain coordination, heavy vehicle transport, regional haulage of construction equipment, import-export facilitation, and domestic trading operations across Cameroon.
+                </p>
+                <div class="service-meta-tag">Supply Chain Network</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIVISION 6: PROJECT CONSULTING -->
+          <div class="service-division-block" data-category="consulting">
+            <div class="division-header">
+              <div class="division-number">Division 06</div>
+              <h2 class="division-title">Project Consulting & Advisory</h2>
+              <p class="division-desc">
+                Technical feasibility, structural assessments, and executive advisory services for developers and institutional entities.
+              </p>
+            </div>
+
+            <div class="services-subgrid">
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Project Feasibility & Planning</h3>
+                <p class="service-summary">
+                  Comprehensive site evaluation, cost modeling, capital requirements forecasting, and environmental suitability assessments before investment commitment.
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4"/>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Technical Quality Auditing</h3>
+                <p class="service-summary">
+                  Independent structural inspections, materials testing compliance verification, and construction monitoring for ongoing developments.
+                </p>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <h3 class="service-name">Development Coordination</h3>
+                <p class="service-summary">
+                  Liaison with municipal planning bodies, architectural teams, civil contractors, and utility authorities to secure necessary permits and smooth operational delivery.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Inquiry Box -->
+          <div class="services-action-box">
+            <div class="action-box-content">
+              <h3>Need a Custom Solution for Your Development?</h3>
+              <p>Our multidisciplinary team can tailor a package combining planning, engineering, material supply, and management.</p>
+            </div>
+            <div class="action-box-btn">
+              <a href="#contact" class="btn btn-primary btn-lg" onclick="handleQuoteClick(); return false;">Request a Scope Discussion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 4: CONTACT                                       -->
+    <!-- ======================================================== -->
+    <section id="page-contact" class="page-section" aria-labelledby="contact-title">
+      <!-- Section Header Banner -->
+      <div class="page-header-banner contact-page-banner">
+        <div class="container">
+          <div class="page-header-content">
+            <span class="badge badge-accent">Direct Communication</span>
+            <h1 id="contact-title" class="page-header-title">Contact Our Office</h1>
+            <p class="page-header-subtitle">
+              Connect with our corporate team in Molyko, Buea, to discuss project scopes, partnerships, or service inquiries.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="contact-layout-grid">
+            <!-- Left Column: Supplied Official Contact Details -->
+            <div class="contact-info-col">
+              <div class="section-tag">Contact Details (Unconfirmed)</div>
+              <h2 class="section-title">Get In Touch With King Construction Holdings S.A.</h2>
+              <p class="body-text">
+                Whether you are planning a residential build, seeking verified land in the South West Region, or exploring a commercial development partnership, we welcome your direct communication.
+              </p>
+
+              <div class="contact-methods-list">
+                <!-- Location -->
+                <div class="contact-method-card">
+                  <div class="method-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                      <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Office location (unconfirmed)</span>
+                    <strong class="method-value">Molyko, Buea</strong>
+                    <span class="method-sub">South West Region, Cameroon</span>
+                    <span class="method-meta-note">Office address and map pin are unconfirmed.</span>
+                  </div>
+                </div>
+
+                <!-- Telephones (Click to Call) -->
+                <div class="contact-method-card">
+                  <div class="method-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Telephone numbers (unconfirmed)</span>
+                    <div class="phone-links-group">
+                      <a href="tel:+237682105925" class="contact-link">+237 682 105 925</a>
+                      <span class="phone-separator">/</span>
+                      <a href="tel:+237677070753" class="contact-link">+237 677 070 753</a>
+                    </div>
+                    <span class="method-sub">Click to call directly from your device</span>
+                  </div>
+                </div>
+
+                <!-- Email (Click to Email) -->
+                <div class="contact-method-card">
+                  <div class="method-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Email address (unconfirmed)</span>
+                    <a href="mailto:kingconstructionholdingssa@gmail.com" class="contact-link email-break">
+                      kingconstructionholdingssa@gmail.com
+                    </a>
+                    <span class="method-sub">Click to open your mail client</span>
+                  </div>
+                </div>
+
+                <!-- WhatsApp Direct Action Button -->
+                <div class="contact-method-card whatsapp-card">
+                  <div class="method-icon whatsapp-icon-bg">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 6.78C8.86 6.78 8.67 6.85 8.53 7C8.38 7.15 7.8 7.7 7.8 8.84C7.8 9.97 8.63 11.06 8.74 11.22C8.86 11.37 10.35 13.67 12.63 14.65C14.52 15.46 14.91 15.3 15.32 15.26C15.93 15.2 16.71 14.77 16.87 14.32C17.03 13.86 17.03 13.47 16.98 13.39C16.93 13.31 16.79 13.26 16.51 13.12C16.23 12.98 14.86 12.3 14.6 12.21C14.35 12.12 14.16 12.07 13.98 12.35C13.79 12.63 13.25 13.31 13.09 13.5C12.93 13.69 12.77 13.71 12.49 13.57C12.21 13.43 11.31 13.13 10.25 12.18C9.42 11.44 8.86 10.53 8.7 10.25C8.54 9.97 8.68 9.82 8.82 9.68C8.95 9.55 9.11 9.34 9.25 9.18C9.39 9.02 9.44 8.9 9.53 8.72C9.62 8.53 9.58 8.37 9.51 8.23C9.44 8.09 8.88 6.72 8.65 6.17C8.42 5.63 8.2 5.71 8.03 5.7C7.88 5.69 7.7 5.69 7.52 5.69"/>
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Direct WhatsApp Business</span>
+                    <a 
+                      href="https://wa.me/237682105925?text=Hello%20King%20Construction%20Holdings%20S.A.,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-whatsapp btn-sm mt-1"
+                    >
+                      Chat Directly via WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map Placeholder / On-Demand Interactive Map Facade (0 KB transferred until clicked) -->
+              <div class="map-card-container">
+                <div class="map-header">
+                  <span class="map-title">Location Reference: Molyko, Buea</span>
+                  <a href="https://maps.google.com/?q=Molyko,Buea,Cameroon" target="_blank" rel="noopener noreferrer" class="map-link">
+                    Open in Google Maps &rarr;
+                  </a>
+                </div>
+                <div class="map-wrapper" id="mapContainer">
+                  <!-- Low-Bandwidth Map Facade -->
+                  <div class="map-facade" id="mapFacade">
+                    <div class="map-facade-pattern"></div>
+                    <div class="map-facade-content">
+                      <div class="map-pin-pulse">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="map-pin-icon">
+                          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                          <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                      </div>
+                      <div class="map-facade-text">
+                        <strong>Molyko, Buea &bull; Cameroon</strong>
+                        <span>Interactive map deferred to conserve mobile data</span>
+                      </div>
+                      <button type="button" class="btn btn-sm btn-secondary" onclick="loadInteractiveMap();">
+                        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>Load Interactive Map</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="map-disclaimer">
+                  <small>Note: Map is centered on Molyko, Buea, Cameroon for contextual geographic reference. Precise site pin will be confirmed upon physical office signage verification.</small>
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column: Professional Enquiry Form -->
+            <div class="contact-form-col">
+              <div class="form-card">
+                <div class="form-header">
+                  <span class="form-tag">Project Inquiry</span>
+                  <h3 class="form-title">Send a Formal Enquiry</h3>
+                  <p class="form-desc">Complete this brief form to discuss your construction, real estate, or industrial requirements.</p>
+                </div>
+
+                <!-- Demonstration Notice (Clear & Transparent) -->
+                <div class="form-demo-notice">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                  </svg>
+                  <span>
+                    <strong>Preview only:</strong> This form does not send or save enquiries. Company contact details are unconfirmed; use them only after verification.
+                  </span>
+                </div>
+
+                <!-- Form Success Banner -->
+                <div id="formSuccessBanner" class="form-alert form-alert-success" style="display: none;" role="alert">
+                  <div class="alert-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                      <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="alert-title">Preview complete; nothing was sent</h4>
+                    <p class="alert-message">
+                      This form is a visual prototype only. Your information was not sent or stored. Contact details shown on this page are unconfirmed.
+                    </p>
+                    <button type="button" class="btn btn-sm btn-outline mt-2" onclick="resetContactForm();">Send Another Inquiry</button>
+                  </div>
+                </div>
+
+                <!-- The Actual Form -->
+                <form id="contactForm" novalidate onsubmit="handleFormSubmit(event);">
+                  <!-- Full Name -->
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">
+                      Full Name <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="fullName" 
+                      name="fullName" 
+                      class="form-control" 
+                      placeholder="e.g. Roland Njie" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="field-error-msg" id="fullNameError"></span>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="form-group">
+                    <label for="emailAddress" class="form-label">
+                      Email Address <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="emailAddress" 
+                      name="emailAddress" 
+                      class="form-control" 
+                      placeholder="e.g. client@example.cm" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="field-error-msg" id="emailAddressError"></span>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="form-group">
+                    <label for="phoneNumber" class="form-label">
+                      Phone Number <span class="required-star">*</span>
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="phoneNumber" 
+                      name="phoneNumber" 
+                      class="form-control" 
+                      placeholder="e.g. +237 6XX XXX XXX" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="field-error-msg" id="phoneNumberError"></span>
+                  </div>
+
+                  <!-- Service of Interest -->
+                  <div class="form-group">
+                    <label for="serviceInterest" class="form-label">
+                      Service of Interest <span class="required-star">*</span>
+                    </label>
+                    <select id="serviceInterest" name="serviceInterest" class="form-control" required aria-required="true">
+                      <option value="" disabled selected>-- Select a division or capability --</option>
+                      <optgroup label="Construction & Infrastructure">
+                        <option value="Residential Construction">Residential Construction</option>
+                        <option value="Civil Engineering & Roads">Civil Engineering & Roads</option>
+                        <option value="Construction Management">Construction Management</option>
+                        <option value="Pre-construction Planning">Pre-construction Planning</option>
+                        <option value="Renovation & Remodeling">Renovation & Remodeling</option>
+                        <option value="Architectural & Building Services">Architectural & Building Services</option>
+                        <option value="Interior Design & Finishing">Interior Design & Finishing</option>
+                        <option value="Plumbing, Electrical & HVAC">Plumbing, Electrical & HVAC</option>
+                        <option value="Borehole Services">Borehole Services</option>
+                        <option value="Land Surveying & Landscaping">Land Surveying & Landscaping</option>
+                        <option value="Soil Testing">Soil Testing</option>
+                      </optgroup>
+                      <optgroup label="Real Estate & Hospitality">
+                        <option value="Real Estate Development">Real Estate Development</option>
+                        <option value="Land Sales & Acquisition">Land Sales & Acquisition</option>
+                        <option value="Property Advisory">Property Advisory</option>
+                        <option value="Hospitality Solutions">Hospitality Solutions</option>
+                      </optgroup>
+                      <optgroup label="Diversified Holdings">
+                        <option value="Building Materials Supply">Building Materials Supply</option>
+                        <option value="Agriculture & Agro-processing">Agriculture & Agro-processing</option>
+                        <option value="Logistics & Trade">Logistics & Trade</option>
+                        <option value="Project Consulting">Project Consulting & Advisory</option>
+                      </optgroup>
+                    </select>
+                    <span class="field-error-msg" id="serviceInterestError"></span>
+                  </div>
+
+                  <!-- Project Description -->
+                  <div class="form-group">
+                    <label for="projectDescription" class="form-label">
+                      Project Description & Location <span class="required-star">*</span>
+                    </label>
+                    <textarea 
+                      id="projectDescription" 
+                      name="projectDescription" 
+                      rows="4" 
+                      class="form-control" 
+                      placeholder="Please outline your project location, scope, proposed timing, or specific technical inquiry..." 
+                      required 
+                      aria-required="true"
+                    ></textarea>
+                    <span class="field-error-msg" id="projectDescriptionError"></span>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                      <span>Preview Enquiry</span>
+                      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Corporate Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-header">
+            <img src="images/logo-optimized.jpg" alt="King Construction Holdings S.A. Logo" class="footer-logo-img" width="52" height="44">
+            <div>
+              <span class="footer-brand-name">KING CONSTRUCTION</span>
+              <span class="footer-brand-sub">HOLDINGS S.A.</span>
+            </div>
+          </div>
+          <p class="footer-tagline">"Building Your Dreams Into Reality."</p>
+          <p class="footer-bio">
+            Company profile and service details are unconfirmed pending review.
+          </p>
+          <div class="footer-demonstration-pill">
+            <span>Website concept; company information unconfirmed</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" onclick="switchPage('home'); return false;">Home</a></li>
+            <li><a href="#about" onclick="switchPage('about'); return false;">About King Construction</a></li>
+            <li><a href="#services" onclick="switchPage('services'); return false;">Services & Divisions</a></li>
+            <li><a href="#contact" onclick="switchPage('contact'); return false;">Contact & Enquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Business Divisions -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Core Divisions</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#services" onclick="switchPage('services'); filterServices('construction'); return false;">Construction & Civil Works</a></li>
+            <li><a href="#services" onclick="switchPage('services'); filterServices('realestate'); return false;">Real Estate & Land Advisory</a></li>
+            <li><a href="#services" onclick="switchPage('services'); filterServices('diversified'); return false;">Building Materials Supply</a></li>
+            <li><a href="#services" onclick="switchPage('services'); filterServices('diversified'); return false;">Agriculture & Logistics</a></li>
+            <li><a href="#services" onclick="switchPage('services'); filterServices('consulting'); return false;">Project Management Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Verified Contact -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Headquarters</h4>
+          <div class="footer-contact-item">
+            <svg class="icon-sm text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            <span>Molyko, Buea, South West Region, Cameroon</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon-sm text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <div>
+              <a href="tel:+237682105925" class="footer-link">+237 682 105 925</a><br>
+              <a href="tel:+237677070753" class="footer-link">+237 677 070 753</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon-sm text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <a href="mailto:kingconstructionholdingssa@gmail.com" class="footer-link email-break">
+              kingconstructionholdingssa@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> King Construction Holdings S.A. All rights reserved.
+        </p>
+        <p class="disclaimer-text">
+          Concept &amp; Architecture Proposal for Corporate Review &bull; Buea, Cameroon
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
